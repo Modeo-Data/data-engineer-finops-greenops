@@ -1,1 +1,1 @@
-# data-engineer-finops-greenops
+# Data Engineer Toolbox for FinOps and GreenOps
