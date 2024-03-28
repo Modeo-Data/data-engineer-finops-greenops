@@ -1,47 +1,47 @@
-# Guide des requêtes SQL pour FinOps dans Snowflake
+# SQL Query Guide for FinOps in Snowflake
 
-### Ce guide propose une collection de requêtes SQL conçues pour optimiser la gestion financière des ressources cloud dans Snowflake.
+### This guide offers a collection of SQL queries designed to optimize financial management of cloud resources in Snowflake.
 
-- automatic_clustering_cost_history_per_day_per_objet :
+- automatic_clustering_cost_history_per_day_per_object :
 
-Cette requête aide à identifier la consommation de crédits par optimisation de recherche dans Snowflake, par table sur les 30 derniers jours. Elle permet de repérer facilement les anomalies ou une consommation élevée, essentiel pour optimiser les coûts et les performances.
- 
+This query aids in identifying credit consumption by search optimization in Snowflake, per table over the last 30 days. It enables easy spotting of anomalies or high consumption, crucial for cost and performance optimization.
+
 - automatic_clustering_history_and_average_over_several_days :
 
-Cette requête montre les crédits quotidiens moyens consommés par Snowpipe, groupés par semaine, au cours de l’année dernière. Elle aide à identifier les anomalies dans les moyennes quotidiennes sur l’année, ce qui vous permet d’analyser les changements inattendus dans la consommation.
+This query shows the average daily credits consumed by Snowpipe, grouped by week, over the last year. It helps identify anomalies in the daily averages over the year, allowing you to analyze unexpected changes in consumption.
 
-- consumption_of_credits_by_partner_tools
+- consumption_of_credits_by_partner_tools :
 
-Cette requête identifie les outils/solutions partenaires de Snowflake (par exemple BI, ETL, etc.) qui consomment le plus de crédits. Cela peut aider à identifier les solutions partenaires qui consomment plus de crédits que prévu.
+This query identifies Snowflake partner tools/solutions (e.g., BI, ETL, etc.) that consume the most credits. This can help identify partner solutions consuming more credits than expected.
 
-- credit_consumption_by_warehouse_over_a_given_period.sql
+- credit_consumption_by_warehouse_over_a_given_period.sql :
 
-Cette requête permet d’identifier les entrepôts qui consomment plus de crédits que les autres et les entrepôts spécifiques qui consomment plus de crédits que prévu.
+This query helps identify warehouses consuming more credits than others and specific warehouses consuming more credits than anticipated.
 
-- optimize_ressource_utilization.sql
+- optimize_resource_utilization.sql :
 
-Cette requête permet aux utilisateurs d’identifier les opportunités pour réduire le temps d'exécution et le volume de données traitées, menant à une optimisation des requêtes et à une réduction significative des coûts.
+This query enables users to identify opportunities to reduce execution time and the volume of data processed, leading to query optimization and a significant reduction in costs.
 
-- query_acceleration_service_cost_per_warehouse.sql
+- query_acceleration_service_cost_per_warehouse.sql :
 
-Cette requête renvoie le nombre total de crédits utilisés par chaque entrepôt de votre compte pour Query Acceleration Service, depuis le début du mois. Cela permet de surveiller  l'utilisation des ressources et de gérer les coûts associés de manière plus proactive.
+This query returns the total number of credits used by each warehouse in your account for the Query Acceleration Service, since the start of the month. This allows for more proactive monitoring of resource use and cost management.
 
-- set_up_cost_effective_data_pipelines.sql
+- set_up_cost_effective_data_pipelines.sql :
 
-Cette requête fournit une vue précise de l'activité de chargement, essentielle pour optimiser l'intégration des données et la gestion des erreurs. Les résultats facilitent l'identification rapide des chargements les plus importants.
+This query provides a clear view of loading activity, essential for optimizing data integration and error management. The results facilitate quick identification of the most significant loads.
 
-- total_cost_of_the_task.sql
+- total_cost_of_the_task.sql :
 
-Cette requête répertorie l’utilisation actuelle des crédits pour toutes les tâches sans serveur.
+This query lists the current credit usage for all serverless tasks.
 
-- total_usage_costs.sql
+- total_usage_costs.sql :
 
-Cette requête affiche le coût d'utilisation par compte sur les derniers 30 jours, totalisé et présenté en monnaie locale. Les résultats offrent une vision claire des dépenses, facilitant la surveillance et l'optimisation budgétaire.
+This query displays usage cost by account over the last 30 days, totaled and presented in local currency. The results offer a clear view of expenditures, facilitating budget monitoring and optimization.
 
-- use_storage_wisely.sql
+- use_storage_wisely.sql :
 
-Cette requête fournit une vue d'ensemble de l'utilisation du stockage par table. L'objectif est d'aider les utilisateurs à identifier où le stockage est le plus utilisé et à optimiser la gestion de l'espace pour réduire les coûts associés. 
+This query provides an overview of storage usage by table. The goal is to help users identify where storage is most used and to optimize space management to reduce associated costs.
 
-- warehouse_daily_compute_spend.sql
+- warehouse_daily_compute_spend.sql :
 
-Cette requête SQL permet une analyse détaillée des coûts liés à l'utilisation des entrepôts, permettant une gestion optimisée des dépenses. 
+This SQL query allows for a detailed analysis of costs related to warehouse usage, enabling optimized expense management.
