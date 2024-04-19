@@ -6,9 +6,9 @@ These examples assume you're working with your specific datasets within Redshift
 
 ## Queries
 
-| Description | Time Period  | Additional Dimensions | SQL Link |
-|-------------|--------------|-----------------------|----------|
-| Identify optimization opportunities for queries | Last 30 days | - | [Link](sql/query_optimization_targets.sql) |
-| Storage utilization overview | Current      | Schema, Table | [Link](sql/storage_usage_overview.sql) |
-| Analyze user-specific cost contributors | Last month   | User | [Link](sql/user_cost_analysis.sql) |
+| Description                                     | Time Period   | Additional Dimensions  |                  SQL Link                   |
+|:------------------------------------------------|:--------------|:-----------------------|:-------------------------------------------:|
+| Identify optimization opportunities for queries | Last 30 days  | -                      | [Link](sql/query_optimization_targets.sql)  |
+| Storage utilization overview                    | Current       | Schema, Table          |   [Link](sql/storage_usage_overview.sql)    |
+| Analyze user-specific cost contributors         | Last month    | User                   |     [Link](sql/user_cost_analysis.sql)      |
 

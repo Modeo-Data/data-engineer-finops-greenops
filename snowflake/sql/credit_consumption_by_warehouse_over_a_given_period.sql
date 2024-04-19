@@ -9,6 +9,7 @@ ORDER BY 2 DESC;
 SELECT warehouse_name,
   SUM(credits_used_compute) AS credits_used_compute_sum
 FROM snowflake.account_usage.warehouse_metering_history
-WHERE start_time >= DATEADD(day, -m, CURRENT_TIMESTAMP())
+-- Set N as wanted
+WHERE start_time >= DATEADD(day, -N, CURRENT_TIMESTAMP())
 GROUP BY 1
 ORDER BY 2 DESC;

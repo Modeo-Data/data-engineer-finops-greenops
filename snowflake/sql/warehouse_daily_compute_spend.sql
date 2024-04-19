@@ -16,23 +16,25 @@ rate_sheet_daily_base as (
 ),
 remaining_balance_daily_without_contract_view AS (
     select
-    date,
-    organization_name,
-    currency,
-    free_usage_balance,
-    capacity_balance,
-    on_demand_consumption_balance,
-    rollover_balance
+        date,
+        organization_name,
+        currency,
+        free_usage_balance,
+        capacity_balance,
+        on_demand_consumption_balance,
+        rollover_balance
     from snowflake.organization_usage.remaining_balance_daily
     qualify row_number() over (partition by date order by contract_number desc nulls last) = 1
 ),
 stop_thresholds as (
-    select min(date) as start_date
+    select
+        min(date) as start_date
     from rate_sheet_daily_base
 
     union all
 
-    select min(date) as start_date
+    select
+        min(date) as start_date
     from remaining_balance_daily_without_contract_view
 ),
 
