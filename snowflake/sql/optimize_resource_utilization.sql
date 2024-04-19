@@ -1,7 +1,7 @@
 SELECT
-    DATE_TRUNC('day', END_TIME) as "Day",
-    SUM(EXECUTION_TIME) / 1000 / 60 / 60 as "Compute Hours",
-    SUM(BYTES_SCANNED) / 1024/1024/1024 as "Data Scanned (GB)"
+    DATE_TRUNC('day', END_TIME) AS "Day",
+    SUM(EXECUTION_TIME) / 1000 / 60 / 60 AS "Compute Hours",
+    SUM(BYTES_SCANNED) / 1024 / 1024 / 1024 AS "Data Scanned (GB)"
 FROM
     SNOWFLAKE.ACCOUNT_USAGE.QUERY_HISTORY
 WHERE
